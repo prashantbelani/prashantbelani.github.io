@@ -499,6 +499,12 @@
     white-space: nowrap;
   }
   .footer-link:hover{ background: var(--color-accent-online-dim); }
+  .footer-links{ display: flex; gap: 12px; flex-wrap: wrap; }
+  .footer-link--alt{
+    color: var(--color-accent-offline);
+    border-color: var(--color-accent-offline);
+  }
+  .footer-link--alt:hover{ background: var(--color-accent-offline-dim); }
   .footer-note{
     font-family: var(--font-mono);
     font-size: 11.5px;
@@ -529,6 +535,7 @@
     <a href="#skills">skills</a>
     <a href="#work">work</a>
     <a href="#contact">contact</a>
+    <a href="Prashant-Belani-CV.pdf" target="_blank" rel="noopener">cv ↗</a>
   </nav>
 </div>
 
@@ -550,7 +557,7 @@
         <h1>Prashant Belani</h1>
         <p class="role">Senior Cross-Platform Engineer &amp; Mobile Architect</p>
         <p class="lede">I design and ship offline-first mobile systems — restaurant registers, trading apps, cockpit tablets, exam platforms — that keep working when the network doesn't, on one codebase across iOS, Android, Windows, and macOS.</p>
-        <p class="location">📍 Ahmedabad, Gujarat, India · <a href="https://www.linkedin.com/in/prashant-belani-252b5341" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="location">📍 Ahmedabad, Gujarat, India · <a href="https://www.linkedin.com/in/prashant-belani-252b5341" target="_blank" rel="noopener">LinkedIn</a> · <a href="Prashant-Belani-CV.pdf" target="_blank" rel="noopener">Download CV</a></p>
 
         <div class="stat-row">
           <div class="stat"><span class="num">12+</span><span class="label">Years shipping</span></div>
@@ -779,7 +786,10 @@
         <h2>Building something that needs to work offline?</h2>
         <p>Based in Ahmedabad, Gujarat, India. Open to architecture and senior engineering roles across Flutter, iOS, and multi-platform systems.</p>
       </div>
-      <a class="footer-link" href="https://www.linkedin.com/in/prashant-belani-252b5341" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      <div class="footer-links">
+        <a class="footer-link" href="https://www.linkedin.com/in/prashant-belani-252b5341" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+        <a class="footer-link footer-link--alt" href="Prashant-Belani-CV.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+      </div>
     </div>
     <p class="footer-note">// this page is a static file — fork it, edit the content, host it on GitHub Pages.</p>
   </div>
