@@ -22,17 +22,17 @@
     --color-accent-online-dim: rgba(79, 216, 224, 0.14);
     --color-accent-offline: #E8954A;
     --color-accent-offline-dim: rgba(232, 149, 74, 0.14);
-
+ 
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-
+ 
     --max-width: 1080px;
   }
-
+ 
   *{ box-sizing: border-box; }
   html{ scroll-behavior: smooth; }
-
+ 
   body{
     margin: 0;
     background-color: var(--color-bg);
@@ -45,22 +45,22 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   a{ color: inherit; text-decoration: none; }
-
+ 
   ::selection{ background: var(--color-accent-online-dim); color: var(--color-text); }
-
+ 
   :focus-visible{
     outline: 2px solid var(--color-accent-online);
     outline-offset: 3px;
   }
-
+ 
   .wrap{
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 24px;
   }
-
+ 
   /* ---------- Site header ---------- */
   .site-header{
     display: flex;
@@ -86,12 +86,12 @@
     color: var(--color-text-muted);
   }
   .site-header nav a:hover{ color: var(--color-accent-online); }
-
+ 
   /* ---------- Hero ---------- */
   .hero{
     padding: 56px 0 40px;
   }
-
+ 
   .status-row{
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@
     letter-spacing: 0.08em;
     color: var(--color-text-muted);
   }
-
+ 
   .toggle{
     position: relative;
     width: 52px;
@@ -128,7 +128,7 @@
     transform: translateX(24px);
     background: var(--color-accent-online);
   }
-
+ 
   .status-label-offline, .status-label-online{ display: none; align-items:center; gap:8px; }
   .hero[data-state="offline"] .status-label-offline{ display: inline-flex; }
   .hero[data-state="online"] .status-label-online{ display: inline-flex; }
@@ -138,14 +138,14 @@
   .hero[data-state="online"] .status-dot{ background: var(--color-accent-online); box-shadow: 0 0 8px var(--color-accent-online); }
   .hero[data-state="offline"] .status-dot{ background: var(--color-accent-offline); box-shadow: 0 0 8px var(--color-accent-offline); }
   .status-row .hint{ color: var(--color-text-dim); }
-
+ 
   .hero-grid{
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     gap: 40px;
     align-items: center;
   }
-
+ 
   .eyebrow{
     font-family: var(--font-mono);
     font-size: 12px;
@@ -154,7 +154,7 @@
     text-transform: uppercase;
     margin: 0 0 14px;
   }
-
+ 
   h1{
     font-family: var(--font-display);
     font-weight: 700;
@@ -163,7 +163,7 @@
     margin: 0 0 10px;
     letter-spacing: -0.01em;
   }
-
+ 
   .role{
     font-family: var(--font-display);
     font-weight: 500;
@@ -171,14 +171,14 @@
     color: var(--color-text-muted);
     margin: 0 0 20px;
   }
-
+ 
   .lede{
     font-size: 16px;
     color: var(--color-text-muted);
     max-width: 480px;
     margin: 0 0 28px;
   }
-
+ 
   .location{
     font-family: var(--font-mono);
     font-size: 13px;
@@ -188,7 +188,7 @@
     align-items: center;
     gap: 8px;
   }
-
+ 
   .stat-row{
     display: flex;
     gap: 28px;
@@ -209,13 +209,13 @@
     color: var(--color-text-dim);
     text-transform: uppercase;
   }
-
+ 
   /* ---------- Diagram ---------- */
   .diagram-wrap{
     position: relative;
   }
   .diagram-wrap svg{ width: 100%; height: auto; display: block; }
-
+ 
   .node-circle{
     fill: var(--color-bg-elevated);
     stroke: var(--color-panel-border);
@@ -252,7 +252,7 @@
   @media (prefers-reduced-motion: reduce){
     .connector{ animation: none; }
   }
-
+ 
   .core-badge{
     font-family: var(--font-mono);
     font-size: 10.5px;
@@ -262,7 +262,7 @@
   .badge-online, .badge-offline{ display: none; }
   .hero[data-state="online"] .badge-online{ display: block; fill: var(--color-accent-online); }
   .hero[data-state="offline"] .badge-offline{ display: block; fill: var(--color-accent-offline); }
-
+ 
   /* ---------- Section shared ---------- */
   section{ padding: 64px 0; }
   .section-head{
@@ -285,7 +285,7 @@
     margin: 0;
     font-weight: 600;
   }
-
+ 
   /* ---------- About ---------- */
   .about-panel{
     background: var(--color-panel);
@@ -314,7 +314,7 @@
   .about-panel__body p{ margin: 0 0 14px; }
   .about-panel__body p:last-child{ margin-bottom: 0; }
   .about-panel__body strong{ color: var(--color-text); font-weight: 600; }
-
+ 
   /* ---------- Competencies ---------- */
   .comp-grid{
     display: grid;
@@ -348,7 +348,7 @@
     border-bottom: 1px dashed rgba(255,255,255,0.05);
   }
   .comp-cell li:last-child{ border-bottom: none; }
-
+ 
   /* ---------- Projects ---------- */
   .project-grid{
     display: grid;
@@ -365,7 +365,7 @@
     transition: border-color 0.2s ease;
   }
   .project-card:hover{ border-color: var(--color-accent-online); }
-
+ 
   .project-card__head{
     display: flex;
     align-items: flex-start;
@@ -380,7 +380,7 @@
     display: flex; align-items: center; justify-content: center;
   }
   .project-icon svg{ width: 20px; height: 20px; stroke: var(--color-accent-online); fill: none; stroke-width: 1.6; }
-
+ 
   .project-title{
     font-family: var(--font-display);
     font-weight: 600;
@@ -393,7 +393,7 @@
     color: var(--color-text-dim);
     margin: 3px 0 0;
   }
-
+ 
   .project-impact{
     font-family: var(--font-mono);
     font-size: 12.5px;
@@ -404,7 +404,7 @@
     display: inline-block;
     margin: 14px 0 16px;
   }
-
+ 
   .project-points{
     list-style: none;
     margin: 0 0 18px;
@@ -425,7 +425,7 @@
     width: 6px; height: 1.5px;
     background: var(--color-accent-online);
   }
-
+ 
   .project-tags{
     display: flex;
     flex-wrap: wrap;
@@ -440,7 +440,7 @@
     border-radius: 3px;
     padding: 3px 7px;
   }
-
+ 
   .project-links{
     display: flex;
     gap: 10px;
@@ -462,7 +462,7 @@
     font-size: 12px;
     color: var(--color-text-dim);
   }
-
+ 
   /* ---------- Footer ---------- */
   footer{
     padding: 50px 0 60px;
@@ -511,7 +511,7 @@
     color: var(--color-text-dim);
     margin-top: 30px;
   }
-
+ 
   /* ---------- Responsive ---------- */
   @media (max-width: 880px){
     .hero-grid{ grid-template-columns: 1fr; }
@@ -527,7 +527,7 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="wrap site-header">
   <div class="mark"><b>PB</b> / mobile-architect</div>
   <nav>
@@ -538,10 +538,10 @@
     <a href="Prashant-Belani-CV.pdf" target="_blank" rel="noopener">cv ↗</a>
   </nav>
 </div>
-
+ 
 <section class="hero" id="top" data-state="online">
   <div class="wrap">
-
+ 
     <div class="status-row">
       <button class="toggle" id="syncToggle" aria-pressed="true" aria-label="Toggle connection state">
         <span class="toggle__knob"></span>
@@ -550,7 +550,7 @@
       <span class="status-label-offline"><span class="status-dot"></span> SYSTEM OFFLINE — queued, will sync on reconnect</span>
       <span class="hint">// this is how every app below stays usable</span>
     </div>
-
+ 
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Mobile architecture, twelve years in production</p>
@@ -558,21 +558,21 @@
         <p class="role">Senior Cross-Platform Engineer &amp; Mobile Architect</p>
         <p class="lede">I design and ship offline-first mobile systems — restaurant registers, trading apps, cockpit tablets, exam platforms — that keep working when the network doesn't, on one codebase across iOS, Android, Windows, and macOS.</p>
         <p class="location">📍 Ahmedabad, Gujarat, India · <a href="https://www.linkedin.com/in/prashant-belani-252b5341" target="_blank" rel="noopener">LinkedIn</a> · <a href="Prashant-Belani-CV.pdf" target="_blank" rel="noopener">Download CV</a></p>
-
+ 
         <div class="stat-row">
           <div class="stat"><span class="num">12+</span><span class="label">Years shipping</span></div>
           <div class="stat"><span class="num">7,500+</span><span class="label">Locations, one codebase</span></div>
           <div class="stat"><span class="num">6</span><span class="label">Industries served</span></div>
         </div>
       </div>
-
+ 
       <div class="diagram-wrap">
         <svg viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of one Flutter codebase connecting to iOS, Android, Windows, and macOS">
           <path class="connector" d="M155,95 C220,120 260,150 295,175"/>
           <path class="connector" d="M155,300 C220,270 260,235 295,205"/>
           <path class="connector" d="M425,95 C360,120 320,150 295,175"/>
           <path class="connector" d="M425,300 C360,270 320,235 295,205"/>
-
+ 
           <g class="node-core">
             <circle class="node-circle" cx="280" cy="190" r="58"/>
             <text class="node-label" x="280" y="183">FLUTTER</text>
@@ -580,7 +580,7 @@
             <text class="core-badge badge-online" x="280" y="218">LIVE SYNC</text>
             <text class="core-badge badge-offline" x="280" y="218">4 QUEUED</text>
           </g>
-
+ 
           <g>
             <circle class="node-circle" cx="115" cy="80" r="40"/>
             <text class="node-label" x="115" y="84">iOS</text>
@@ -602,7 +602,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="about">
   <div class="wrap">
     <div class="section-head">
@@ -618,7 +618,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="skills">
   <div class="wrap">
     <div class="section-head">
@@ -653,16 +653,16 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="work">
   <div class="wrap">
     <div class="section-head">
       <span class="section-tag">03</span>
       <h2>Featured projects</h2>
     </div>
-
+ 
     <div class="project-grid">
-
+ 
       <!-- Royal POS -->
       <article class="project-card">
         <div class="project-card__head">
@@ -681,7 +681,7 @@
           <a href="https://apps.apple.com/in/app/royal-pos/id1466916523" target="_blank" rel="noopener">App Store ↗</a>
         </div>
       </article>
-
+ 
       <!-- TestTrek -->
       <article class="project-card">
         <div class="project-card__head">
@@ -699,7 +699,7 @@
           <a href="https://play.google.com/store/apps/details?id=com.vbtech.testtrek&hl=en_IN" target="_blank" rel="noopener">Play Store ↗</a>
         </div>
       </article>
-
+ 
       <!-- UnlistedZone -->
       <article class="project-card">
         <div class="project-card__head">
@@ -718,7 +718,7 @@
           <a href="https://apps.apple.com/in/app/unlistedzone/id1640469608" target="_blank" rel="noopener">App Store ↗</a>
         </div>
       </article>
-
+ 
       <!-- LevelFlight -->
       <article class="project-card">
         <div class="project-card__head">
@@ -736,7 +736,7 @@
           <span class="none">Private operator deployment</span>
         </div>
       </article>
-
+ 
       <!-- Classic Valet -->
       <article class="project-card">
         <div class="project-card__head">
@@ -756,7 +756,7 @@
           <a href="https://apps.apple.com/kw/app/classic-valet/id6466197831" target="_blank" rel="noopener">App Store ↗</a>
         </div>
       </article>
-
+ 
       <!-- Self Kiosk -->
       <article class="project-card">
         <div class="project-card__head">
@@ -774,11 +774,11 @@
           <a href="https://play.google.com/store/apps/details?id=com.royalpos.capto.self" target="_blank" rel="noopener">Play Store ↗</a>
         </div>
       </article>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <footer id="contact">
   <div class="wrap">
     <div class="footer-grid">
@@ -794,7 +794,7 @@
     <p class="footer-note">// this page is a static file — fork it, edit the content, host it on GitHub Pages.</p>
   </div>
 </footer>
-
+ 
 <script>
   (function(){
     var hero = document.getElementById('top');
@@ -806,6 +806,6 @@
     });
   })();
 </script>
-
+ 
 </body>
 </html>
